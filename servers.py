@@ -2,7 +2,7 @@ from flask import Flask
 from threading import Thread
 import discord
 
-app = Flask("")
+app = Flask(__name__)
 
 @app.route("/")
 def main():
